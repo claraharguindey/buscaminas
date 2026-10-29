@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de niveles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Editor de niveles</h1>
+
+        <label>Nombre <input type="text" id="edTitle" value="Escombros"></label>
+        <label>Imagen <input type="text" id="edImgUrl" placeholder="./imagen.jpg" onchange="updateEditorImageFromUrl()"></label>
+        <input type="file" accept="image/*" onchange="handleEditorFileUpload(event)">
+
+        <p>clic para poner o quitar bombas: <span id="edBombCounter">0 bombas</span></p>
+
+        <div id="editorContainer" class="board grid">
+            <div id="editorGrid" class="grid"></div>
+        </div>
+
+        <p>
+            <button onclick="saveAndPlay()">Guardar</button>
+            <button onclick="clearEditorBombs()">Limpiar</button>
+            <button onclick="copyGeneratedCode()">Copiar código</button>
+        </p>
+        <textarea id="edGeneratedCode" readonly></textarea>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+
+</html>
