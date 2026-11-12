@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Massallera";
-  src: url("massallera.ttf") format("truetype");
+  src: url("./fonts/massallera.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "PressStart2P-Regular";
-  src: url("PressStart2P-Regular.ttf") format("truetype");
+  src: url("./fonts/PressStart2P-Regular.ttf") format("truetype");
 }
 
 :root {
@@ -26,7 +26,6 @@ body {
   user-select: none;
 }
 
-/* Marco de 3px */
 body::before {
   content: "";
   position: fixed;
@@ -55,7 +54,6 @@ button {
   cursor: pointer;
 }
 
-/* Título */
 .title {
   margin: 0;
   font-size: clamp(32px, 6vw, 52px);
@@ -63,7 +61,6 @@ button {
   text-align: center;
 }
 
-/* Marcador */
 .status {
   display: flex;
   justify-content: space-between;
@@ -76,7 +73,6 @@ button {
   font-size: 12px;
 }
 
-/* Tablero */
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -127,7 +123,6 @@ button {
   opacity: 0.4;
 }
 
-/* Números de videojuego */
 .num-style {
   font-family: "PressStart2P-Regular", monospace;
   font-size: calc(var(--cell) * 0.4);
@@ -158,7 +153,6 @@ button {
   color: #808080;
 }
 
-/* Leyenda de niveles */
 .legend {
   position: fixed;
   left: 40px;

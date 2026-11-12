@@ -1,7 +1,7 @@
 const NIVELES_CODIGO = [
   {
     nombre: "31 de mayo",
-    imagen: "./bbaa-san-fernando.jpg",
+    imagen: "./img/bbaa-san-fernando.jpg",
     bombas: [
       [1, 2],
       [2, 8],
@@ -18,7 +18,7 @@ const NIVELES_CODIGO = [
   },
   {
     nombre: "Real Academia de Bellas artes de San Fernando",
-    imagen: "./bbaa-san-fernando.jpg",
+    imagen: "./img/bbaa-san-fernando.jpg",
     bombas: [
       [7, 1],
       [7, 2],
@@ -46,7 +46,7 @@ const TOTAL_TILES = GRID_SIZE * GRID_SIZE;
 const SAVED_LEVEL_KEY = "buscaminas_custom_level";
 const CUSTOM_LEVEL_ID = "custom";
 
-const BOMB_HTML = `<img class="bomb" src="./orsini.png" alt="">`;
+const BOMB_HTML = `<img class="bomb" src="./img/orsini.png" alt="">`;
 const FLAG_HTML = `<svg class="flag" viewBox="0 0 16 16" shape-rendering="crispEdges">
     <polygon points="9,2 9,9 3,5.5" fill="#e50914"/>
     <rect x="9" y="2" width="2" height="10" fill="#000"/>
