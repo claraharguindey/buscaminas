@@ -30,7 +30,7 @@ const NIVELES_CODIGO = [
   },
   {
     nombre: "morral",
-    imagen: "./morral.jpeg",
+    imagen: "./img/morral.jpeg",
     bombas: [
       [1, 5],
       [3, 5],
