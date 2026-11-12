@@ -58,7 +58,7 @@ button {
 /* Título */
 .title {
   margin: 0;
-  font-size: clamp(32px, 6vw, 64px);
+  font-size: clamp(32px, 6vw, 52px);
   font-weight: normal;
   text-align: center;
 }
